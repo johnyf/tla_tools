@@ -3,7 +3,9 @@ tla_tools
 
 Put these scripts on your PATH and they should help you run the [TLA+ Tools](http://research.microsoft.com/en-us/um/people/lamport/tla/tools.html)
 
-Note that you may need to modify `lib/common` with the appropriate paths.
+Note that you may need to modify `lib/common` with the appropriate paths,
+and create the directories `/tmp/tla2tex` and `/tmp/tlc`,
+mentioned in the files `tla2tex` and `tlc2`.
 
 Also, from what I can tell all of these tools expect to be run in the same directory as the input files.
 
