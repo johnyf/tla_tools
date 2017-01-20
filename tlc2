@@ -2,7 +2,4 @@
 
 . $(dirname "$0")/lib/common
 
-WORKERS=`sysctl hw.ncpu | awk '{print $2}'`
-METADIR=/tmp/tlc
-
-$JAVA_PATH -Xmx512m -cp $TLA_PATH tlc2.TLC -workers $WORKERS -metadir $METADIR $@
+$JAVA_PATH -cp $TLA_PATH tlc2.TLC $@
