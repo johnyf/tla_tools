@@ -2,4 +2,7 @@
 
 . $(dirname "$0")/lib/common
 
-$JAVA_PATH -cp $TLA_PATH tla2tex.TLA $@
+$JAVA_PATH -cp $TLA_PATH tla2tex.TLA \
+    -metadir .aux \
+    -latexCommand pdflatex \
+    -latexOutputExt pdf $@
