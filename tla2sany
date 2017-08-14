@@ -8,4 +8,4 @@
 # -STAT/-stat: statistics about builtin operator usage
 # found in http://tlaplus.codeplex.com/SourceControl/latest#tlatools/src/tlc2/TLC.java
 
-$JAVA_PATH -Xmx512m -cp $TLA_PATH tla2sany.SANY $@
+$JAVA_PATH -DTLA-Library=$TLAPS_LIB -Xmx512m -cp $TLA_PATH tla2sany.SANY $@
