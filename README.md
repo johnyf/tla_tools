@@ -3,6 +3,13 @@ tla_tools
 
 Put these scripts on your PATH and they should help you run the [TLA+ Tools](http://research.microsoft.com/en-us/um/people/lamport/tla/tools.html)
 
+You need to define the following variables in your environment
+(for example, in the file `~/.bashrc`):
+
+- `$TLA_TOOLS`: path to unpacked distribution of the TLA+ tools,
+  containing a `tla/` directory
+- `$TLAPS_LIB`: path to the TLAPS `library/`
+
 Note that you may need to modify `lib/common` with the appropriate paths,
 and create the directories `/tmp/tla2tex` and `/tmp/tlc`,
 mentioned in the files `tla2tex` and `tlc2`.
