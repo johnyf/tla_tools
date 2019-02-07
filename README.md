@@ -10,9 +10,7 @@ You need to define the following variables in your environment
   containing a `tla/` directory
 - `$TLAPS_LIB`: path to the TLAPS `library/`
 
-Note that you may need to modify `lib/common` with the appropriate paths,
-and create the directories `/tmp/tla2tex` and `/tmp/tlc`,
-mentioned in the files `tla2tex` and `tlc2`.
+Note that you may need to modify `lib/common` with the appropriate paths.
 
 Also, from what I can tell all of these tools expect to be run in the same directory as the input files.
 
