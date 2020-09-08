@@ -1,4 +1,5 @@
 #!/bin/sh
 
 java -cp $TLA_TOOLS \
+    -DTLA-Library=$TLAPS_LIB \
     tlc2.TLC $@
