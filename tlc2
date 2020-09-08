@@ -1,5 +1,4 @@
 #!/bin/sh
 
-. $(dirname "$0")/lib/common
-
-$JAVA_PATH -cp $TLA_PATH tlc2.TLC $@
+java -cp $TLA_TOOLS \
+    tlc2.TLC $@

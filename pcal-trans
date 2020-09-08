@@ -2,4 +2,4 @@
 
 . $(dirname "$0")/lib/common
 
-$JAVA_PATH -Xmx512m -cp $TLA_PATH pcal.trans $@
+java -cp $TLA_TOOLS pcal.trans $@

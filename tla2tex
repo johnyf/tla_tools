@@ -1,8 +1,7 @@
 #!/bin/sh
 
-. $(dirname "$0")/lib/common
-
-$JAVA_PATH -cp $TLA_PATH tla2tex.TLA \
+java -cp $TLA_TOOLS \
+    tla2tex.TLA \
     -metadir __tlacache__/.aux \
     -latexCommand pdflatex \
     -latexOutputExt pdf $@

@@ -1,14 +1,12 @@
 #!/bin/sh
 
-. $(dirname "$0")/lib/common
-
 # -S/-s: semantic analysis should be done
 # -L/-l: level checking should be done
 # -D/-d: control should be transferred to debugger
 # -STAT/-stat: statistics about builtin operator usage
 # found in http://tlaplus.codeplex.com/SourceControl/latest#tlatools/src/tlc2/TLC.java
 
-$JAVA_PATH -cp $TLA_PATH \
+java -cp $TLA_TOOLS \
     -DTLA-Library=$TLAPS_LIB \
     -Xmx512m \
     tla2sany.SANY $@

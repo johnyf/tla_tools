@@ -1,7 +1,6 @@
 #!/bin/sh
 
-. $(dirname "$0")/lib/common
-
-$JAVA_PATH -cp $TLA_PATH tla2tex.TeX \
+java -cp $TLA_TOOLS \
+    tla2tex.TeX \
     -latexCommand xelatex \
     $@
