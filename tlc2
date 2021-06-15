@@ -1,7 +1,7 @@
 #!/bin/sh
 
 java -cp $TLA_TOOLS \
-    -Xmx2048m \
+    -Xmx4g \
     -XX:+UseParallelGC \
     -DTLA-Library=$TLAPS_LIB \
     tlc2.TLC $@
